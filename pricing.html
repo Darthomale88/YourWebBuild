@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+
+<meta name="description" content="YourWebBuild pricing: a $100 one-time website build, then keep it on a $49/mo care plan or host it yourself. Google Business Profile setup available for $250. Indianapolis web design."/>
+<meta name="robots" content="index, follow"/>
+<meta property="og:title" content="Pricing | YourWebBuild"/>
+<meta property="og:description" content="A $100 website build, then a simple $49/mo care plan — or take your files and host it yourself. Honest, flat pricing."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://yourwebbuild.com/pricing.html"/>
+
+<title>Pricing | YourWebBuild</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="icon" type="image/x-icon" href="Images/ywb-blue-tab.png">
+<link rel="stylesheet" href="style.css">
+
+<style>
+/* One-time build — the flat $100 feature block */
+#build{background:var(--navy2);}
+.build-card{max-width:760px;margin:0 auto;border:1px solid var(--gold);background:var(--navy3);padding:2.75rem;text-align:center;}
+.build-eyebrow{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:1rem;}
+.build-price{font-family:'Cormorant Garamond',serif;font-size:4.5rem;font-weight:700;line-height:1;color:var(--white);}
+.build-price sup{font-size:2rem;vertical-align:top;margin-top:.7rem;color:var(--gold);}
+.build-price small{font-size:.95rem;display:block;font-family:'DM Sans',sans-serif;color:var(--muted);letter-spacing:.08em;margin-top:.6rem;text-transform:uppercase;}
+.build-desc{color:var(--muted);max-width:520px;margin:1.25rem auto 2rem;line-height:1.7;}
+.build-feats{list-style:none;display:grid;grid-template-columns:repeat(2,1fr);gap:.75rem 2rem;max-width:560px;margin:0 auto 2.25rem;text-align:left;}
+.build-feats li{font-size:.9rem;color:var(--muted);display:flex;gap:.6rem;align-items:flex-start;}
+.build-feats li::before{content:'✦';color:var(--gold);flex-shrink:0;font-size:.8rem;margin-top:.2rem;}
+.build-card .btn{width:auto;min-width:220px;}
+@media(max-width:560px){.build-feats{grid-template-columns:1fr;}.build-card{padding:2rem 1.5rem;}}
+
+/* After launch — two ways to run the site */
+#after{background:var(--navy);}
+.choice-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;max-width:900px;margin:0 auto;}
+.choice-card{position:relative;border:1px solid var(--border);background:var(--navy3);padding:2.5rem 2rem 2rem;display:flex;flex-direction:column;transition:border-color .3s,transform .35s cubic-bezier(.22,1,.36,1);}
+.choice-card:hover{transform:translateY(-6px);border-color:rgba(201,168,76,.35);}
+.choice-card.featured{border-color:var(--gold);}
+.choice-card.featured::before{content:'Most Popular';position:absolute;top:-1px;left:50%;transform:translateX(-50%);background:var(--gold);color:var(--navy);font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:.28rem 1.1rem;white-space:nowrap;}
+.choice-tier{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:.75rem;}
+.choice-price{font-family:'Cormorant Garamond',serif;font-size:3.4rem;font-weight:700;line-height:1;color:var(--white);}
+.choice-price sup{font-size:1.5rem;vertical-align:top;margin-top:.5rem;color:var(--gold);}
+.choice-price span{font-size:1rem;font-family:'DM Sans',sans-serif;font-weight:400;color:var(--muted);margin-left:.2rem;}
+.choice-desc{font-size:.88rem;color:var(--muted);margin:.75rem 0 1.5rem;padding-bottom:1.5rem;border-bottom:1px solid var(--border);line-height:1.65;}
+.choice-feats{list-style:none;flex:1;margin-bottom:2rem;}
+.choice-feats li{font-size:.9rem;color:var(--muted);padding:.45rem 0;display:flex;align-items:flex-start;gap:.7rem;border-bottom:1px solid var(--border);}
+.choice-feats li:last-child{border-bottom:none;}
+.choice-feats li .check{color:var(--gold);font-size:.8rem;flex-shrink:0;margin-top:.18rem;}
+.choice-feats li.bold-feat{color:var(--white);}
+.choice-cta{display:block;text-align:center;padding:.85rem;border:1px solid var(--gold);color:var(--gold);font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;transition:all .25s;margin-top:auto;}
+.choice-cta:hover{background:var(--gold);color:var(--navy);}
+.choice-card.featured .choice-cta{background:var(--gold);color:var(--navy);}
+.choice-card.featured .choice-cta:hover{background:var(--gold2);border-color:var(--gold2);}
+@media(max-width:760px){.choice-grid{grid-template-columns:1fr;max-width:440px;}}
+
+/* Add-on — Google Business Profile */
+#addon{padding-top:0;}
+.addon{max-width:900px;margin:0 auto;border:1px solid var(--border);background:var(--navy2);padding:2rem 2.25rem;display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap;}
+.addon-info{flex:1;min-width:260px;}
+.addon-tier{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem;}
+.addon-info h3{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:600;margin-bottom:.4rem;}
+.addon-info p{font-size:.9rem;color:var(--muted);line-height:1.6;max-width:520px;}
+.addon-right{display:flex;flex-direction:column;align-items:flex-end;gap:1rem;}
+.addon-price{font-family:'Cormorant Garamond',serif;font-size:2.6rem;font-weight:700;color:var(--white);line-height:1;text-align:right;}
+.addon-price sup{font-size:1.2rem;vertical-align:top;color:var(--gold);}
+.addon-price small{display:block;font-size:.72rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-top:.35rem;font-family:'DM Sans',sans-serif;font-weight:400;}
+@media(max-width:560px){.addon{flex-direction:column;text-align:left;align-items:flex-start;}.addon-right{align-items:flex-start;}.addon-price{text-align:left;}}
+
+/* FAQ */
+.faq-section{padding:0 5% 5rem;}
+.faq-inner{max-width:720px;margin:0 auto;}
+.faq-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3vw,2.4rem);font-weight:600;margin-bottom:2rem;text-align:center;}
+.faq-item{border-bottom:1px solid var(--border);padding:1.25rem 0;}
+.faq-q{font-size:.95rem;font-weight:500;color:var(--white);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;}
+.faq-q .arrow{color:var(--gold);font-size:.8rem;transition:transform .3s;}
+.faq-item.open .arrow{transform:rotate(90deg);}
+.faq-a{font-size:.88rem;color:var(--muted);max-height:0;overflow:hidden;transition:max-height .4s ease,padding .3s ease;line-height:1.75;}
+.faq-item.open .faq-a{max-height:240px;padding-top:.75rem;}
+
+/* Thank-you modal (shown after a successful Stripe checkout redirect) */
+.twb-modal-overlay{display:none;position:fixed;inset:0;background:rgba(10,15,28,.78);backdrop-filter:blur(3px);align-items:center;justify-content:center;padding:20px;z-index:9999;animation:twb-fade .25s ease-out;}
+.twb-modal-overlay.twb-open{display:flex;}
+@keyframes twb-fade{from{opacity:0;}to{opacity:1;}}
+.twb-card{max-width:480px;width:100%;max-height:90vh;overflow-y:auto;background:var(--navy3);border:1px solid var(--border);border-radius:4px;padding:40px 32px 32px;position:relative;text-align:center;animation:twb-rise .35s ease-out both;box-shadow:0 20px 60px rgba(0,0,0,.5);}
+@keyframes twb-rise{from{opacity:0;transform:translateY(14px) scale(.98);}to{opacity:1;transform:translateY(0) scale(1);}}
+.twb-close{position:absolute;top:14px;right:14px;width:32px;height:32px;border:none;background:transparent;color:var(--muted);font-size:1.3rem;line-height:1;cursor:pointer;border-radius:4px;display:flex;align-items:center;justify-content:center;transition:color .15s ease,background .15s ease;}
+.twb-close:hover{color:var(--gold);background:rgba(255,255,255,.05);}
+.twb-close:focus-visible{outline:2px solid var(--gold);outline-offset:2px;}
+.twb-check{width:52px;height:52px;margin:0 auto 22px;}
+.twb-check circle{fill:none;stroke:var(--gold);stroke-width:1.4;opacity:.55;}
+.twb-check path{fill:none;stroke:var(--gold);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:30;stroke-dashoffset:30;animation:twb-draw .6s .35s ease-out forwards;}
+@keyframes twb-draw{to{stroke-dashoffset:0;}}
+.twb-card h2{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:1.9rem;color:var(--white);margin-bottom:10px;}
+.twb-lede{font-size:.94rem;line-height:1.55;color:var(--muted);margin-bottom:24px;}
+.twb-lede strong{color:var(--gold);font-weight:500;}
+.twb-divider{width:52px;height:1px;background:var(--gold);opacity:.5;margin:0 auto 24px;}
+.twb-features{list-style:none;text-align:left;display:flex;flex-direction:column;gap:12px;margin-bottom:26px;}
+.twb-features li{display:flex;align-items:flex-start;gap:10px;font-size:.86rem;color:var(--muted);line-height:1.4;}
+.twb-features li .twb-dot{flex-shrink:0;width:5px;height:5px;border-radius:50%;background:var(--gold);margin-top:7px;}
+.twb-features li span.twb-label{color:var(--white);font-weight:500;}
+.twb-portal-btn{display:block;width:100%;text-align:center;background:var(--gold);color:var(--navy);font-family:'DM Sans',sans-serif;font-weight:500;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;padding:.85rem 0;border-radius:3px;text-decoration:none;transition:background .2s ease,transform .15s ease;}
+.twb-portal-btn:hover{background:var(--gold2);transform:translateY(-1px);}
+@media(prefers-reduced-motion:reduce){.twb-modal-overlay,.twb-card,.twb-check path{animation:none!important;opacity:1!important;stroke-dashoffset:0!important;}}
+@media(max-width:480px){.twb-card{padding:34px 22px 26px;}.twb-card h2{font-size:1.6rem;}}
+</style>
+</head>
+<body>
+
+<nav id="main-nav">
+  <a href="index.html" class="nav-logo"><img src="Images/ywb-gold.png" alt="logo"><span class="hide-text"> YourWebBuild </span></a>
+  <div class="nav-links" id="navLinks">
+    <a href="index.html#services">Services</a>
+    <a href="process.html">Process</a>
+    <a href="portfolio.html">Work</a>
+    <a href="pricing.html" class="active">Pricing</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="nav-right">
+    <a href="contact.html" class="btn btn-fill">Get a Quote</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="hero-eyebrow">Pricing</div>
+  <h1 class="page-title">Simple, <em>honest pricing.</em></h1>
+  <p class="page-sub">One flat price to build it, then it's yours. Keep it on a low monthly plan, or take your files and host it anywhere.</p>
+  <div class="gold-divider"></div>
+</div>
+
+<!-- ONE-TIME BUILD -->
+<section id="build">
+  <div class="gold-line reveal d1"></div>
+  <h2 class="section-title reveal d2">One price. Your whole site.</h2>
+  <p class="section-sub reveal d3">No page-count tiers, no upsells. A professional, hand-coded website built for your business.</p>
+  <div class="build-card reveal d2">
+    <div class="build-eyebrow">Website Build</div>
+    <div class="build-price"><sup>$</sup>100<small>One-time</small></div>
+    <p class="build-desc">A clean, fast, mobile-ready site coded from scratch — designed to turn local visitors into customers.</p>
+    <ul class="build-feats">
+      <li>Custom, hand-coded design</li>
+      <li>Mobile responsive on every screen</li>
+      <li>Contact form built in</li>
+      <li>Basic on-page SEO</li>
+      <li>SSL, Analytics &amp; Search Console</li>
+      <li>Launch support &amp; walkthrough</li>
+    </ul>
+    <a href="contact.html" class="btn btn-fill">Start Your Build</a>
+  </div>
+</section>
+
+<!-- AFTER LAUNCH -->
+<section id="after">
+  <div class="gold-line reveal d1"></div>
+  <h2 class="section-title reveal d2">After launch, two ways to run it.</h2>
+  <p class="section-sub reveal d3">Once your site is built, it's yours. Let us keep it running, or take the files and host them yourself — your call.</p>
+  <div class="choice-grid">
+
+    <div class="choice-card featured reveal d1" style="margin-top:1.5rem;">
+      <div class="choice-tier">Host &amp; Care</div>
+      <div class="choice-price"><sup>$</sup>49<span>/mo</span></div>
+      <p class="choice-desc">We host, secure, and look after your site every month so you never have to think about it. Month-to-month, cancel anytime.</p>
+      <ul class="choice-feats">
+        <li class="bold-feat"><span class="check">✦</span> Hosting, security &amp; SSL</li>
+        <li><span class="check">✦</span> Automatic backups</li>
+        <li><span class="check">✦</span> Uptime monitoring</li>
+        <li><span class="check">✦</span> Minor edits &amp; content updates</li>
+        <li><span class="check">✦</span> Software &amp; library updates</li>
+        <li><span class="check">✦</span> Direct support from the builder</li>
+      </ul>
+      <!-- TODO: confirm this is your live $49/mo subscription Payment Link -->
+      <a href="https://buy.stripe.com/aFa7sK5XEgO0h2pbyrfMA00" class="choice-cta">Get the Care Plan</a>
+    </div>
+
+    <div class="choice-card reveal d2" style="margin-top:1.5rem;">
+      <div class="choice-tier">Host It Yourself</div>
+      <div class="choice-price"><sup>$</sup>0<span>/mo</span></div>
+      <p class="choice-desc">Prefer to run it on your own? We hand over all your files and you host wherever you like. No monthly fee, ever.</p>
+      <ul class="choice-feats">
+        <li class="bold-feat"><span class="check">✦</span> All your site files, delivered</li>
+        <li><span class="check">✦</span> Host anywhere you choose</li>
+        <li><span class="check">✦</span> You own it outright</li>
+        <li><span class="check">✦</span> Quick handoff walkthrough</li>
+        <li><span class="check">✦</span> Come back for a care plan anytime</li>
+      </ul>
+      <a href="contact.html" class="choice-cta">Get My Files</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ADD-ON -->
+<section id="addon">
+  <div class="addon reveal">
+    <div class="addon-info">
+      <div class="addon-tier">Optional Add-On</div>
+      <h3>Google Business Profile Setup</h3>
+      <p>We set up or optimize your Google Business Profile so you show up in local map results, collect reviews, and get found when neighbors search for what you do.</p>
+    </div>
+    <div class="addon-right">
+      <div class="addon-price"><sup>$</sup>250<small>One-time</small></div>
+      <a href="contact.html" class="btn">Add It On</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div class="faq-inner reveal">
+    <h2 class="faq-title">Common Questions</h2>
+
+    <div class="faq-item">
+      <div class="faq-q">What's included in the $100 build? <span class="arrow">›</span></div>
+      <div class="faq-a">A custom, hand-coded website — mobile responsive, with a contact form, basic on-page SEO, SSL, analytics, and Search Console set up. You also get launch support and a walkthrough so you feel confident owning it.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">Do I have to pay the $49/mo? <span class="arrow">›</span></div>
+      <div class="faq-a">No. The care plan is optional. If you'd rather, we hand over all your files and you host the site yourself with no monthly fee. Either way, the site is yours.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">What does the $49/mo care plan cover? <span class="arrow">›</span></div>
+      <div class="faq-a">Hosting, security, SSL, automatic backups, uptime monitoring, minor edits and content updates, software updates, and direct support from me. It's month-to-month with no long-term contract.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">What's the Google Business Profile add-on? <span class="arrow">›</span></div>
+      <div class="faq-a">A one-time $250 service where I set up or optimize your Google Business Profile — the listing that shows up in Google Maps and local search. It's how neighbors find your hours, reviews, and contact info when they search for your kind of business.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">Can I cancel the care plan anytime? <span class="arrow">›</span></div>
+      <div class="faq-a">Yes. It's month-to-month — just let me know before your next billing date. If you cancel, I hand over your files so you can host the site yourself or move it anywhere you like.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">Do I own my website? <span class="arrow">›</span></div>
+      <div class="faq-a">Always. Whether you stay on a care plan or host it yourself, the site is yours to keep.</div>
+    </div>
+
+  </div>
+</section>
+
+<div class="cta-band reveal">
+  <div class="cta-band-text">
+    <h3>Ready to get started?</h3>
+    <p>Tell me about your business and I'll get back to you within 24 hours with next steps.</p>
+  </div>
+  <a href="contact.html" class="btn btn-fill">Get a Free Quote</a>
+</div>
+
+<footer>
+  <div class="footer-logo">YourWebBuild</div>
+  <div class="footer-links">
+    <a href="index.html#services">Services</a>
+    <a href="process.html">Process</a>
+    <a href="portfolio.html">Work</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="https://billing.stripe.com/p/login/aFa7sK5XEgO0h2pbyrfMA00">Manage My Plan</a>
+  </div>
+  <div class="footer-copy">© 2026 YourWebBuild. Indianapolis, IN.</div>
+</footer>
+
+<!-- Thank-you modal, opens automatically when redirected here from a successful Stripe checkout -->
+<div class="twb-modal-overlay" id="twbOverlay" role="dialog" aria-modal="true" aria-labelledby="twbTitle">
+  <div class="twb-card">
+    <button class="twb-close" id="twbClose" aria-label="Close">&times;</button>
+
+    <svg class="twb-check" viewBox="0 0 56 56" aria-hidden="true">
+      <circle cx="28" cy="28" r="26"></circle>
+      <path d="M17 29 L25 37 L40 20"></path>
+    </svg>
+
+    <h2 id="twbTitle">You're All Set</h2>
+    <p class="twb-lede" id="twbLede">
+      Thanks for joining <strong id="twbPlanName">the YourWebBuild Care Plan</strong>. Your site is officially covered, and a confirmation has been sent to your inbox.
+    </p>
+
+    <div class="twb-divider"></div>
+
+    <ul class="twb-features">
+      <li><span class="twb-dot"></span><span><span class="twb-label">Update your payment method.</span> Swap in a new card whenever yours changes.</span></li>
+      <li><span class="twb-dot"></span><span><span class="twb-label">View billing history.</span> Download any past invoice or receipt.</span></li>
+      <li><span class="twb-dot"></span><span><span class="twb-label">Cancel anytime.</span> End your subscription whenever you like, no questions asked.</span></li>
+    </ul>
+
+    <a href="https://billing.stripe.com/p/login/aFa7sK5XEgO0h2pbyrfMA00" class="twb-portal-btn" id="twbPortalBtn">Manage My Plan</a>
+  </div>
+</div>
+
+<a href="tel:+13177312108" class="call-fab" aria-label="Call YourWebBuild">
+	  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+		<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+	  </svg>
+	</a>
+
+<script src="script.js"></script>
+<script>
+// Thank-you modal — opens when Stripe redirects back with ?success=true
+(function () {
+  const overlay = document.getElementById('twbOverlay');
+  const closeBtn = document.getElementById('twbClose');
+  const planNameEl = document.getElementById('twbPlanName');
+
+  function openModal(planName) {
+    if (planName) planNameEl.textContent = 'the ' + planName + ' Plan';
+    overlay.classList.add('twb-open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    overlay.classList.remove('twb-open');
+    document.body.style.overflow = '';
+    const url = new URL(window.location.href);
+    url.searchParams.delete('success');
+    url.searchParams.delete('plan');
+    window.history.replaceState({}, document.title, url.pathname + url.search + url.hash);
+  }
+
+  closeBtn.addEventListener('click', closeModal);
+  overlay.addEventListener('click', function (e) { if (e.target === overlay) closeModal(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && overlay.classList.contains('twb-open')) closeModal(); });
+
+  const params = new URLSearchParams(window.location.search);
+  if (params.get('success') === 'true') openModal(params.get('plan'));
+})();
+
+// FAQ accordion
+document.querySelectorAll('.faq-q').forEach(q => {
+  q.addEventListener('click', () => {
+    const item = q.parentElement;
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  });
+});
+</script>
+</body>
+</html>
